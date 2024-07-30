@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1182%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1183%26quot%3b)'%3e%3c/rect%3e%3cpath d='M201.26 126.28 a50.27 50.27 0 1 0 100.54 0 a50.27 50.27 0 1 0 -100.54 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1116.42 255.9a19.93 19.93 0 1 0 21.4-33.62z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M548.46 290.54L569.16 290.54L569.16 320.73L548.46 320.73z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M749.02 349.02L771.51 349.02L771.51 369.92L749.02 369.92z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M19.68 352.64L65.9 352.64L65.9 398.86L19.68 398.86z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M337.2 186.3a24.08 24.08 0 1 0 42.12 23.34z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1183.4 313.05L1199.46 313.05L1199.46 329.11L1183.4 329.11z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M129.28 417.42L140.32 417.42L140.32 437.93L129.28 437.93z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1295.49 265.46L1310.5 265.46L1310.5 280.47L1295.49 280.47z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M402.78 337.98a43.48 43.48 0 1 0-43.03 75.56z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M559.78 221.04 a22.2 22.2 0 1 0 44.4 0 a22.2 22.2 0 1 0 -44.4 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M533.45 19.41a55.8 55.8 0 1 0 69.73 87.13z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M235.93 172.76a12.84 12.84 0 1 0-23.61 10.08z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M-9.63 524.25a45.3 45.3 0 1 0 34.52-83.76z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1006.82 147.01 a2.03 2.03 0 1 0 4.06 0 a2.03 2.03 0 1 0 -4.06 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M225.09 81.11L277.78 81.11L277.78 133.8L225.09 133.8z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M868.16 216.45L869.27 216.45L869.27 271.25L868.16 271.25z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1206.79 330.72a6.17 6.17 0 1 0 12.34-0.2z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M837.95 267.22L867.26 267.22L867.26 296.53L837.95 296.53z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M723.67 71.03 a50.06 50.06 0 1 0 100.12 0 a50.06 50.06 0 1 0 -100.12 0z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M1392.88 39.65L1417.55 39.65L1417.55 95.27L1392.88 95.27z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M721.7 185.9L739.14 185.9L739.14 203.34L721.7 203.34z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M824.12 84.93a48.59 48.59 0 1 0-69.33 68.1z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M43.59 432.13 a34.21 34.21 0 1 0 68.42 0 a34.21 34.21 0 1 0 -68.42 0z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M979.22 109.22a27.14 27.14 0 1 0-6.78 53.85z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1255.54 73.8L1301.54 73.8L1301.54 119.8L1255.54 119.8z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M89.63 242.07L137.36 242.07L137.36 243.4L89.63 243.4z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M540.86 258.33 a44.3 44.3 0 1 0 88.6 0 a44.3 44.3 0 1 0 -88.6 0z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M144.53 351.79a48.22 48.22 0 1 0-83-49.11z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M664.57 322.65L688.11 322.65L688.11 346.19L664.57 346.19z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1405.88 37.12L1432.65 37.12L1432.65 63.89L1405.88 63.89z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1202.22 392.11L1256.28 392.11L1256.28 415.53L1202.22 415.53z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1387.25 510.21 a26.52 26.52 0 1 0 53.04 0 a26.52 26.52 0 1 0 -53.04 0z' fill='%23d3b714'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1182'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='100%25' x2='50%25' y2='0%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1183'%3e%3cstop stop-color='rgba(14%2c 42%2c 71%2c 1)' offset='0.49'%3e%3c/stop%3e%3cstop stop-color='rgba(68%2c 37%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+        background-color: #f3da68;
+      }
+
+      h1 {
+        background-color: #65b0ee;
+        color: #fff;
+        margin: 0 -20px 20px -20px;
+        padding: 20px;
+      }
+
+      .input-group {
+        margin-bottom: 15px;
+        margin: 20px 20px;
+      }
+
+      label {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+
+      input,
+      select {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: calc(100% - 30px);
+        font-size: 20px;
+      }
+
+      button {
+        background-color: #0c9635;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #85cc6f;
+      }
+
+      .table-container {
+        margin-top: 20px;
+        background-color: #add8e6;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      th {
+        background-color: #039651;
+        color: #fff;
+      }
+
+      td button {
+        background-color: #fd4b0b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+
+      td button:hover {
+        background-color: #e03a00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add a new transaction:</h1>
+      <form id="transactionForm">
+        <div class="input-group">
+          <label for="type">Type:</label>
+          <select id="type" required>
+            <option value="">Choose one...</option>
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="input-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" required />
+        </div>
+        <button type="submit">Add to transactions</button>
+      </form>
+      <div class="table-container">
+        <table id="transactionTable">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>Options</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Transactions will be added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      const transactionForm = document.getElementById("transactionForm");
+      const transactionTable = document
+        .getElementById("transactionTable")
+        .getElementsByTagName("tbody")[0];
+
+      transactionForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const type = document.getElementById("type").value;
+        const name = document.getElementById("name").value;
+        const amount = document.getElementById("amount").value;
+
+        addTransaction(type, name, amount);
+        transactionForm.reset();
+      });
+
+      function addTransaction(type, name, amount) {
+        const row = transactionTable.insertRow();
+        const typeCell = row.insertCell(0);
+        const nameCell = row.insertCell(1);
+        const amountCell = row.insertCell(2);
+        const optionsCell = row.insertCell(3);
+
+        typeCell.textContent = type;
+        nameCell.textContent = name;
+        amountCell.textContent = `$${amount}`;
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.onclick = function () {
+          transactionTable.deleteRow(row.rowIndex - 1);
+        };
+        optionsCell.appendChild(deleteButton);
+      }
+    </script>
+  </body>
+</html>
